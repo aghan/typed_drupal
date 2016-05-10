@@ -1,0 +1,4 @@
+services:
+  sluggify.default:
+    class: Drupal\sluggify\SluggifyService
+    arguments: []

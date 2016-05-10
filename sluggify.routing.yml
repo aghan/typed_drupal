@@ -1,0 +1,7 @@
+sluggify_form:
+  path: 'sluggify/form'
+  defaults:
+    _form: '\Drupal\sluggify\Form\DefaultForm'
+    _title: 'Sluggify Service'
+  requirements:
+    _permission: 'create blog post content'

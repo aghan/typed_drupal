@@ -1,0 +1,5 @@
+name: sluggify
+type: module
+description: Module that would describe the Sluggify functionality of this site.
+core: 8.x
+package: Custom
