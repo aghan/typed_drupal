@@ -23,15 +23,6 @@ class SluggifySelenium extends PHPUnit_Extensions_Selenium2TestCase {
   }
 
   /**
-   * Function which tests Sluggify URL by an anonymous user.
-   */
-  public function testSluggifyWithoutLogin() {
-    $this->url('sluggify/form');
-    $content = $this->byXPath('//*[@id="block-blog-themes-page-title"]/div[2]/h1')->text();
-    $this->assertEquals('ACCESS DENIED', $content);
-  }
-
-  /**
    * Function which tests Sluggify URL by logging in.
    * 
    * @param string $originalString String to be sluggified
@@ -60,6 +51,9 @@ class SluggifySelenium extends PHPUnit_Extensions_Selenium2TestCase {
             ', $content);
   }
   
+  /**
+   * Provider function for Sluggify function.
+   */
   public function providertestSluggifyWithLogin() {
       return array(
         array('This string will be sluggified', 'this-string-will-be-sluggified'),
