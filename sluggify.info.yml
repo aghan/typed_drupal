@@ -1,5 +1,5 @@
-name: sluggify
+name: Sluggify
 type: module
-description: Module that would describe the Sluggify functionality of this site.
+description: Module that would describe the Sluggify functionality using PHP7's typing features.
 core: 8.x
 package: Custom
