@@ -49,7 +49,7 @@ class SluggifyForm extends FormBase {
     $form['url'] = array (
       '#type' => 'textfield',
       '#title' => t('URL Field'),
-      '#description' => t('Please enter URL you want to sluggify'),
+      '#description' => t('Please enter a string you want to sluggify'),
       '#required' => TRUE,
     );
     // Submit Button.

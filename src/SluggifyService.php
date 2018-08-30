@@ -20,8 +20,7 @@ class SluggifyService implements SluggifyServiceInterface {
   public function __construct() {}
 
   public function sluggifyfunction(string $string, string $separator = '-', int $maxLength = 96) : string {
-    $title = iconv('UTF-8', 'ASCII//TRANSLIT', $string);
-    $title = preg_replace("%[^-/+|\w ]%", '', $title);
+    $title = preg_replace("%[^-/+|\w ]%", '', $string);
     $title = strtolower(trim(substr($title, 0, $maxLength), '-'));
     $title = preg_replace("/[\/_|+ -]+/", $separator, $title);
     return $title;
